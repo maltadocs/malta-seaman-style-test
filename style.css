@@ -1,1 +1,83 @@
+/* Основной фон и шрифт */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('assets/background.jpg'); /* Твой фон с мальтийским крестом */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+/* Центрированная секция баннера */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  backdrop-filter: brightness(0.8) blur(2px); /* Мягкий фильтр для читаемости */
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Логотип */
+.logo {
+  width: 180px;
+  margin-bottom: 25px;
+}
+
+/* Заголовок и подзаголовок */
+h1 {
+  font-size: 48px;
+  margin: 0 0 10px;
+  color: #fcbf49;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-size: 20px;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  background-color: rgba(13, 27, 42, 0.6);
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+/* Кнопка */
+.btn {
+  background-color: #fcbf49;
+  color: #0d1b2a;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn:hover {
+  background-color: #ffe066;
+  cursor: pointer;
+}
+
+/* Адаптация на мобильных */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
+  p {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
 
